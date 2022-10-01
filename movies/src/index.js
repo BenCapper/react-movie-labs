@@ -4,91 +4,124 @@ import HomePage from "./pages/homePage";
 import MovieDetailsPage from './pages/movieDetailsPage'
 
 const sample = {
-  adult: false,
-  backdrop_path: "/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg",
-  belongs_to_collection: {
-    id: 10,
-    name: "Star Wars Collection",
-    poster_path: "/iTQHKziZy9pAAY4hHEDCGPaOvFC.jpg",
-    backdrop_path: "/d8duYyyC9J5T825Hg7grmaabfxQ.jpg",
-  },
-  budget: 200000000,
-  genres: [
-    {
-      id: 14,
-      name: "Fantasy",
+    "adult": false,
+    "backdrop_path": "/3ombg55JQiIpoPnXYb2oYdr6DtP.jpg",
+    "belongs_to_collection": {
+        "id": 484312,
+        "name": "Skyline Collection",
+        "poster_path": "/jaWM0xXSLeb1O2lpfQ9kI0WiGOu.jpg",
+        "backdrop_path": "/b2JplRt6qfZKkupnoxl57n3r46y.jpg"
     },
-    {
-      id: 12,
-      name: "Adventure",
-    },
-    {
-      id: 878,
-      name: "Science Fiction",
-    },
-    {
-      id: 28,
-      name: "Action",
-    },
-  ],
-  homepage:
-    "https://www.starwars.com/films/star-wars-episode-viii-the-last-jedi",
-  id: 181808,
-  imdb_id: "tt2527336",
-  original_language: "en",
-  original_title: "Star Wars: The Last Jedi",
-  overview:
-    "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
-  popularity: 44.208,
-  poster_path: "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
-  production_companies: [
-    {
-      id: 1,
-      logo_path: "/o86DbpburjxrqAzEDhXZcyE8pDb.png",
-      name: "Lucasfilm",
-      origin_country: "US",
-    },
-    {
-      id: 11092,
-      logo_path: null,
-      name: "Ram Bergman Productions",
-      origin_country: "US",
-    },
-    {
-      id: 2,
-      logo_path: "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
-      name: "Walt Disney Pictures",
-      origin_country: "US",
-    },
-  ],
-  production_countries: [
-    {
-      iso_3166_1: "US",
-      name: "United States of America",
-    },
-  ],
-  release_date: "2017-12-13",
-  revenue: 1332459537,
-  runtime: 152,
-  spoken_languages: [
-    {
-      iso_639_1: "en",
-      name: "English",
-    },
-  ],
-  status: "Released",
-  tagline: "Darkness rises... and light to meet it",
-  title: "Star Wars: The Last Jedi",
-  video: false,
-  vote_average: 7,
-  vote_count: 9692,
-};
+    "budget": 70000000,
+    "genres": [
+        {
+            "id": 878,
+            "name": "Science Fiction"
+        },
+        {
+            "id": 28,
+            "name": "Action"
+        }
+    ],
+    "homepage": "",
+    "id": 560144,
+    "imdb_id": "tt9387250",
+    "original_language": "en",
+    "original_title": "Skylines",
+    "overview": "When a virus threatens to turn the now earth-dwelling friendly alien hybrids against humans, Captain Rose Corley must lead a team of elite mercenaries on a mission to the alien world in order to save what's left of humanity.",
+    "popularity": 69.653,
+    "poster_path": "/2W4ZvACURDyhiNnSIaFPHfNbny3.jpg",
+    "production_companies": [
+        {
+            "id": 9987,
+            "logo_path": "/o5OTKAw7Acl5fTZYPyl8M8D9570.png",
+            "name": "Lipsync Productions",
+            "origin_country": "GB"
+        },
+        {
+            "id": 10936,
+            "logo_path": null,
+            "name": "Hydraulx",
+            "origin_country": ""
+        },
+        {
+            "id": 27758,
+            "logo_path": "/je3uCVqOU6CTnbAHRuVQrz8rug4.png",
+            "name": "Artbox",
+            "origin_country": "LT"
+        },
+        {
+            "id": 66497,
+            "logo_path": null,
+            "name": "Mirabelle Pictures Productions",
+            "origin_country": ""
+        },
+        {
+            "id": 99449,
+            "logo_path": null,
+            "name": "M45 Productions",
+            "origin_country": ""
+        },
+        {
+            "id": 117747,
+            "logo_path": null,
+            "name": "Media Finance Capital",
+            "origin_country": "GB"
+        },
+        {
+            "id": 146052,
+            "logo_path": null,
+            "name": "Fasten Films",
+            "origin_country": "ES"
+        },
+        {
+            "id": 150079,
+            "logo_path": null,
+            "name": "Gifflar Films Limited",
+            "origin_country": ""
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "FR",
+            "name": "France"
+        },
+        {
+            "iso_3166_1": "LT",
+            "name": "Lithuania"
+        },
+        {
+            "iso_3166_1": "GB",
+            "name": "United Kingdom"
+        },
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "2020-10-25",
+    "revenue": 0,
+    "runtime": 113,
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "To save our world she must invade theirs.",
+    "title": "Skylines",
+    "video": false,
+    "vote_average": 5.624,
+    "vote_count": 441
+}
 
 const images = [
-  "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
-  "/v1QQKq8M0fWxMgSdGOX1aCv8qMB.jpg",
-  "/2iGN0aKHJYD0xQydlfuCUAcgNbO.jpg",
-  "/rjBwhsOzHKUw2NIOrE7aMqjfe6s.jpg",
+  "/2W4ZvACURDyhiNnSIaFPHfNbny3.jpg",
+  "/jaWM0xXSLeb1O2lpfQ9kI0WiGOu.jpg",
+  "/3ombg55JQiIpoPnXYb2oYdr6DtP.jpg",
+  "/b2JplRt6qfZKkupnoxl57n3r46y.jpg",
 ]
 const movies = [sample, sample, sample, sample, sample, sample, sample];
 
