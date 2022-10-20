@@ -1,5 +1,6 @@
 import React from "react";
-import * as ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
+import MoviesContextProvider from "./contexts/moviesContext";
 import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import UpcomingPage from "./pages/upcomingMoviesPage";
@@ -26,19 +27,20 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <SiteHeader />
-        <Routes>
-          <Route path="/reviews/:id" element={ <MovieReviewPage /> } />
-          <Route path="/movies/favorites" element={<FavoriteMoviesPage />} />
-          <Route path="/movies/upcoming" element={<UpcomingPage />} />
-          <Route path="/movies/:id" element={<MoviePage />} />
-          <Route path="/" element={<HomePage />} />
-          <Route path="*" element={ <Navigate to="/" /> } />
-        </Routes>
+        <MoviesContextProvider>
+          <Routes>
+            <Route path="/reviews/:id" element={ <MovieReviewPage /> } />
+            <Route path="/movies/favorites" element={<FavoriteMoviesPage />} />
+            <Route path="/movies/upcoming" element={<UpcomingPage />} />
+            <Route path="/movies/:id" element={<MoviePage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="*" element={ <Navigate to="/" /> } />
+          </Routes>
+        </MoviesContextProvider>
       </BrowserRouter>
     <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 };
 
-const rootElement = ReactDOM.createRoot(document.getElementById("root"))
-rootElement.render(<App />);
+ReactDOM.render(<App />, document.getElementById("root"));
