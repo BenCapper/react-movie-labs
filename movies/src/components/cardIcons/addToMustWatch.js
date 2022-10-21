@@ -8,7 +8,7 @@ const AddToMustWatchIcon = ({ movie }) => {
 
   const handleAddToMustWatch = (e) => {
     e.preventDefault();
-    context.addToFavorites(movie);
+    context.addToMustWatch(movie);
   };
 
   return (
