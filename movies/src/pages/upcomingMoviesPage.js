@@ -6,7 +6,7 @@ import PlaylistAddIcon from '../components/cardIcons/mustWatch';
 import { useQuery } from 'react-query';
 
 const UpcomingPage = (props) => {
-  const {  data, error, isLoading, isError }  = useQuery('discover', getUpcoming)
+  const {  data, error, isLoading, isError }  = useQuery('upcoming', getUpcoming)
 
   if (isLoading) {
     return <Spinner />
@@ -16,9 +16,11 @@ const UpcomingPage = (props) => {
     return <h1>{error.message}</h1>
   }  
   const movies = data.results;
+  console.log(movies)
 
   // Redundant, but necessary to avoid app crashing.
   const favorites = movies.filter(m => m.favorite)
+
   localStorage.setItem('favorites', JSON.stringify(favorites))
 
   return (
